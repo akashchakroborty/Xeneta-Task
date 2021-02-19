@@ -1,4 +1,5 @@
 import axios, { AxiosResponse, Method } from 'axios';
+import { Ports } from '../Redux/Types/portBasedRatesTypes';
 
 export interface Options {
   method: 'get';
@@ -25,7 +26,7 @@ export enum StatusCode {
   noContent = 204,
 }
 
-export type ApiResponse = any;
+export type ApiResponse = Ports[];
 
 export const RestClient = async (options: Options): Promise<AxiosResponse<ApiResponse>> => {
   const commonHeader = {

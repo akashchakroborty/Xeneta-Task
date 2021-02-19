@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { RatesParam } from '../../Types/commonTypes';
+import { RatesParam } from '../../Redux/Types/portBasedRatesTypes';
 import { PORTS_URL, RATES_URL } from './urls';
 
 const createUrlFromParams = (paramObj: any, path: string) => {

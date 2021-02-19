@@ -1,3 +1,5 @@
+const dotenv = require('dotenv');
+const webpack = require('webpack');
 module.exports = {
   mode: 'development',
   devtool: 'cheap-module-source-map',
@@ -15,4 +17,9 @@ module.exports = {
     },
     publicPath: '/',
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': JSON.stringify(dotenv.config().parsed),
+    }),
+  ],
 };

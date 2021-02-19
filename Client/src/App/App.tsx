@@ -1,9 +1,13 @@
 import React from 'react';
-import { Button } from 'antd';
 import './app.scss';
+import OriginDestination from '../Components/OriginDestination/OriginDestination';
 
 const App: React.FC = () => {
-  return <div><Button type="ghost">Test Button</Button></div>;
+  return (
+    <div>
+      <OriginDestination />
+    </div>
+  );
 };
 
 export default App;
