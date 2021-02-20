@@ -1,4 +1,5 @@
 export const SET_PORTS_SUCCESS = 'SET_PORTS_SUCCESS';
 export const SET_PORTS_FAILURE = 'SET_PORTS_FAILURE';
-export const DEFAULT_PORTS = [];
-export const DEFAULT_RATES = [];
+export const GET_PORTS_LOADING = 'GET_PORTS_LOADING';
+export const UPDATE_ORIGIN = 'UPDATE_ORIGIN';
+export const UPDATE_DESTINATION = 'UPDATE_DESTINATION';

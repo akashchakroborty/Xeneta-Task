@@ -1,9 +1,13 @@
-.dropdown{
-    font-size: 16px;
-    font-weight: bold;
-    color: #00539f;
-    text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-color: #00539f;
-    text-underline-offset: 0.5em;
+@import '../../App/app.variables.scss';
+
+.dropdown {
+  font-size: $primary-font-size;
+  font-weight: bold;
+  color: $primary-color;
+  text-decoration: underline;
+  text-decoration-color: $primary-color;
+  text-underline-offset: 0.5em;
+  .ant-select-arrow {
+    color: $primary-color;
+  }
 }

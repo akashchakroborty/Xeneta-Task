@@ -1,12 +1,12 @@
 @import '~antd/dist/antd.css';
+@import './app.variables.scss';
 
 body {
   margin: 0px;
   box-sizing: border-box;
-  margin: 3em;
 }
 
 .icon {
-  font-size: 16px;
-  color: #00539f;
+  font-size: $primary-font-size;
+  color: $primary-color;
 }

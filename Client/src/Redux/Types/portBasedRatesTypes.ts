@@ -1,6 +1,9 @@
 export interface PortBasedRatesState {
   ports: Ports[];
   rates: Rates[];
+  isPortsLoading: boolean;
+  origin: string;
+  destination: string;
 }
 
 export interface Ports {
