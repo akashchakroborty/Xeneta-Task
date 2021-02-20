@@ -1,49 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders the component 1`] = `
+exports[`should test the App Component should render the component 1`] = `
 <div>
-  <Header />
-  <Navigation />
-  <Divider
-    className="divider"
-  />
-  <Switch>
-    <Route
-      component={[Function]}
-      exact={true}
-      key="/"
-      path="/"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      key="/quality-check"
-      path="/quality-check"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      key="/event-authorisation"
-      path="/event-authorisation"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      key="/product-details"
-      path="/product-details"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      key="/range-authorisation"
-      path="/range-authorisation"
-    />
-    <Route
-      component={[Function]}
-      exact={true}
-      key="/quality-check-details"
-      path="/quality-check-details"
-    />
-  </Switch>
+  <Connect(OriginDestination) />
+  <Connect(RatesWrapper) />
 </div>
 `;

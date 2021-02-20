@@ -40,8 +40,11 @@ const ChartComponent: React.FC<ChartProps> = ({
       height={height}
       data={data}
       margin={{
- top: 5, right: 20, bottom: 5, left: 0
-}}
+        top: 5,
+        right: 20,
+        bottom: 5,
+        left: 0,
+      }}
     >
       <Line type={type} dataKey={dataKeyY} stroke="#00539f" />
       <CartesianGrid stroke="#00539f" strokeDasharray="5 5" vertical={false} />

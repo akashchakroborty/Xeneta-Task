@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the RadioGroup Component should render the Component 1`] = `
+<Memo(ForwardRef)
+  onChange={[MockFunction]}
+  value="mean"
+>
+  <Radio
+    key="mean"
+    type="radio"
+    value="mean"
+  >
+    Market Average
+  </Radio>
+  <Radio
+    key="low"
+    type="radio"
+    value="low"
+  >
+    Market Low
+  </Radio>
+  <Radio
+    key="high"
+    type="radio"
+    value="high"
+  >
+    Market High
+  </Radio>
+</Memo(ForwardRef)>
+`;

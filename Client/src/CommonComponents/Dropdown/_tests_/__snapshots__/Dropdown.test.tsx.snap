@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the Dropdown Component should render the Component 1`] = `
+<div>
+  <ForwardRef(InternalSelect)
+    bordered={false}
+    className="dropdown"
+    defaultValue="Select Origin"
+    loading={false}
+    onChange={[Function]}
+    showSearch={true}
+  >
+    <Option
+      key="NOOSL"
+      value="NOOSL"
+    >
+      Oslo
+       
+      (
+      NOOSL
+      )
+    </Option>
+    <Option
+      key="CNSGH"
+      value="CNSGH"
+    >
+      Shanghai
+       
+      (
+      CNSGH
+      )
+    </Option>
+    <Option
+      key="CNSTG"
+      value="CNSTG"
+    >
+      Shantou
+       
+      (
+      CNSTG
+      )
+    </Option>
+    <Option
+      key="NLRTM"
+      value="NLRTM"
+    >
+      Rotterdam
+       
+      (
+      NLRTM
+      )
+    </Option>
+    <Option
+      key="DEHAM"
+      value="DEHAM"
+    >
+      Hamburg
+       
+      (
+      DEHAM
+      )
+    </Option>
+    <Option
+      key="GBFXT"
+      value="GBFXT"
+    >
+      Felixstowe
+       
+      (
+      GBFXT
+      )
+    </Option>
+    <Option
+      key="USNYC"
+      value="USNYC"
+    >
+      New York
+       
+      (
+      USNYC
+      )
+    </Option>
+  </ForwardRef(InternalSelect)>
+</div>
+`;

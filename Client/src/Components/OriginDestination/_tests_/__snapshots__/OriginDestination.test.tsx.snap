@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the OriginDestination Component should render the Component 1`] = `
+<div
+  className="originDestination"
+>
+  <Connect(DropdownComponent)
+    defaultOption="Select Origin"
+  />
+  <ForwardRef(SwapOutlined)
+    className="icon"
+  />
+  <Connect(DropdownComponent)
+    defaultOption="Select Destination"
+  />
+  <ButtonComponent
+    disabled={true}
+    onClick={[Function]}
+    type="primary"
+    value="Get Rates"
+  />
+</div>
+`;
