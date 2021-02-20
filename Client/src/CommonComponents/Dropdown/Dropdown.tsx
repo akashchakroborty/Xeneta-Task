@@ -47,6 +47,7 @@ const DropdownComponent: React.FC<DropdownProps> = ({
         className="dropdown"
         onChange={handlePortSelect}
         loading={isPortsLoading}
+        showSearch
       >
         {ports.map((port: Ports) => (
           <Option key={port.code} value={port.code}>
