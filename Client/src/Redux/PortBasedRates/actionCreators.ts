@@ -7,6 +7,7 @@ import {
   PortBasedRatesActionTypes,
   UpdateDestination,
   UpdateOrigin,
+  UpdateRateType,
 } from '../Types/portBasedRatesActionTypes';
 import { RatesParam } from '../Types/portBasedRatesTypes';
 import {
@@ -18,6 +19,7 @@ import {
   SET_RATES_SUCCESS,
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
+  UPDATE_RATE_TYPE,
 } from './constants';
 
 export const getPorts = (): ThunkAction<
@@ -110,4 +112,11 @@ export const getRates = (
     });
     throw new Error(ERROR_MESSAGE);
   }
+};
+
+export const updateRateType = (selectedRateType: string): UpdateRateType => {
+  return {
+    type: UPDATE_RATE_TYPE,
+    payload: selectedRateType,
+  };
 };

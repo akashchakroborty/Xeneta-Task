@@ -51,7 +51,11 @@ const DropdownComponent: React.FC<DropdownProps> = ({
       >
         {ports.map((port: Ports) => (
           <Option key={port.code} value={port.code}>
-            {port.name} ({port.code})
+            {port.name}
+            {' '}
+            (
+            {port.code}
+            )
           </Option>
         ))}
       </Select>

@@ -1,7 +1,9 @@
 import {
+  DEFAULT_GET_RATES_CLICKED,
   DEFAULT_LOADING,
   DEFAULT_PORTS,
   DEFAULT_RATES,
+  DEFAULT_RATE_TYPE,
   EMPTY_STRING,
 } from '../../Constants/constants';
 import { PortBasedRatesActionTypes } from '../Types/portBasedRatesActionTypes';
@@ -15,6 +17,7 @@ import {
   SET_RATES_SUCCESS,
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
+  UPDATE_RATE_TYPE,
 } from './constants';
 
 export const defaultState: PortBasedRatesState = {
@@ -24,6 +27,8 @@ export const defaultState: PortBasedRatesState = {
   isRatesLoading: DEFAULT_LOADING,
   origin: EMPTY_STRING,
   destination: EMPTY_STRING,
+  selectedRateType: DEFAULT_RATE_TYPE,
+  isGetRateClicked: DEFAULT_GET_RATES_CLICKED,
 };
 
 const portBasedRatesReducer = (
@@ -40,6 +45,7 @@ const portBasedRatesReducer = (
       return {
         ...state,
         ports: DEFAULT_PORTS,
+        isPortsLoading: DEFAULT_LOADING,
       };
     case GET_PORTS_LOADING:
       return {
@@ -60,16 +66,26 @@ const portBasedRatesReducer = (
       return {
         ...state,
         rates: action.payload,
+        selectedRateType: DEFAULT_RATE_TYPE,
+        isGetRateClicked: true,
       };
     case SET_RATES_FAILURE:
       return {
         ...state,
         rates: DEFAULT_RATES,
+        isRatesLoading: DEFAULT_LOADING,
+        selectedRateType: DEFAULT_RATE_TYPE,
+        isGetRateClicked: true,
       };
     case GET_RATES_LOADING:
       return {
         ...state,
         isRatesLoading: action.payload,
+      };
+    case UPDATE_RATE_TYPE:
+      return {
+        ...state,
+        selectedRateType: action.payload,
       };
     default:
       return state;

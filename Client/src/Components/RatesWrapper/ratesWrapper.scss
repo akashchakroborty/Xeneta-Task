@@ -1,0 +1,15 @@
+@import '../../App/app.variables.scss';
+
+.ratesWrapper {
+  margin: 0 4em;
+  .ant-spin-spinning {
+    display: flex;
+    justify-content: center;
+  }
+  .ratesContainer > div {
+    margin: 2.5em 0;
+  }
+  .ant-alert-message {
+    color: $primary-color;
+  }
+}

@@ -10,7 +10,9 @@ export interface ButtonProps {
   disabled?: boolean;
 }
 
-const ButtonComponent: React.FC<ButtonProps> = ({ type, onClick, value, disabled = false }) => {
+const ButtonComponent: React.FC<ButtonProps> = ({
+ type, onClick, value, disabled = false
+}) => {
   return (
     <Button type={type} onClick={onClick} className="button" disabled={disabled}>
       {value}

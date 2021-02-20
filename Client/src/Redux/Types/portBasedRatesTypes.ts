@@ -5,6 +5,8 @@ export interface PortBasedRatesState {
   isRatesLoading: boolean;
   origin: string;
   destination: string;
+  selectedRateType: string;
+  isGetRateClicked: boolean;
 }
 
 export interface Ports {
