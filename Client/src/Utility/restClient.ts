@@ -1,5 +1,5 @@
 import axios, { AxiosResponse, Method } from 'axios';
-import { Ports } from '../Redux/Types/portBasedRatesTypes';
+import { Ports, Rates } from '../Redux/Types/portBasedRatesTypes';
 
 export interface Options {
   method: 'get';
@@ -26,7 +26,7 @@ export enum StatusCode {
   noContent = 204,
 }
 
-export type ApiResponse = Ports[];
+export type ApiResponse = Ports[] & Rates[];
 
 export const RestClient = async (options: Options): Promise<AxiosResponse<ApiResponse>> => {
   const commonHeader = {
@@ -35,7 +35,7 @@ export const RestClient = async (options: Options): Promise<AxiosResponse<ApiRes
   };
   const axiosInstance = axios.create({
     validateStatus(status: number) {
-      return status >= 200 && status <= 503;
+      return status >= 200 && status < 400;
     },
   });
   const axiosParams: AxiosParams = {

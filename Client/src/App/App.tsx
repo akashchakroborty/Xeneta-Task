@@ -1,6 +1,7 @@
 import React from 'react';
+import OriginDestination from '../Components/OriginDestination/OriginDestination.container';
+
 import './app.scss';
-import OriginDestination from '../Components/OriginDestination/OriginDestination';
 
 const App: React.FC = () => {
   return (

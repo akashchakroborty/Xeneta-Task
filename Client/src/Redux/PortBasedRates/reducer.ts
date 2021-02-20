@@ -8,8 +8,11 @@ import { PortBasedRatesActionTypes } from '../Types/portBasedRatesActionTypes';
 import { PortBasedRatesState } from '../Types/portBasedRatesTypes';
 import {
   GET_PORTS_LOADING,
+  GET_RATES_LOADING,
   SET_PORTS_FAILURE,
   SET_PORTS_SUCCESS,
+  SET_RATES_FAILURE,
+  SET_RATES_SUCCESS,
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
 } from './constants';
@@ -18,6 +21,7 @@ export const defaultState: PortBasedRatesState = {
   ports: DEFAULT_PORTS,
   rates: DEFAULT_RATES,
   isPortsLoading: DEFAULT_LOADING,
+  isRatesLoading: DEFAULT_LOADING,
   origin: EMPTY_STRING,
   destination: EMPTY_STRING,
 };
@@ -51,6 +55,21 @@ const portBasedRatesReducer = (
       return {
         ...state,
         destination: action.payload,
+      };
+    case SET_RATES_SUCCESS:
+      return {
+        ...state,
+        rates: action.payload,
+      };
+    case SET_RATES_FAILURE:
+      return {
+        ...state,
+        rates: DEFAULT_RATES,
+      };
+    case GET_RATES_LOADING:
+      return {
+        ...state,
+        isRatesLoading: action.payload,
       };
     default:
       return state;

@@ -1,11 +1,14 @@
 import {
   GET_PORTS_LOADING,
+  GET_RATES_LOADING,
   SET_PORTS_FAILURE,
   SET_PORTS_SUCCESS,
+  SET_RATES_FAILURE,
+  SET_RATES_SUCCESS,
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
 } from '../PortBasedRates/constants';
-import { Ports } from './portBasedRatesTypes';
+import { Ports, Rates } from './portBasedRatesTypes';
 
 export interface SetPortsSuccess {
   type: typeof SET_PORTS_SUCCESS;
@@ -31,9 +34,26 @@ export interface UpdateDestination {
   payload: string;
 }
 
+export interface SetRatesSuccess {
+  type: typeof SET_RATES_SUCCESS;
+  payload: Rates[];
+}
+
+export interface SetRatesFailure {
+  type: typeof SET_RATES_FAILURE;
+}
+
+export interface GetRatesLoading {
+  type: typeof GET_RATES_LOADING;
+  payload: boolean;
+}
+
 export type PortBasedRatesActionTypes =
   | SetPortsSuccess
   | SetPortsFailure
   | GetPortsLoading
   | UpdateOrigin
-  | UpdateDestination;
+  | UpdateDestination
+  | SetRatesSuccess
+  | SetRatesFailure
+  | GetRatesLoading;

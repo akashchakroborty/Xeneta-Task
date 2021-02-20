@@ -2,6 +2,7 @@ export interface PortBasedRatesState {
   ports: Ports[];
   rates: Rates[];
   isPortsLoading: boolean;
+  isRatesLoading: boolean;
   origin: string;
   destination: string;
 }

@@ -1,0 +1,14 @@
+@import '../../App/app.variables.scss';
+
+.button {
+  background: $primary-color;
+  border-radius: 2em;
+  border-color: $primary-color;
+  &:hover,
+  &:focus {
+    background: $white-color;
+    color: $primary-color;
+    border-radius: 2em;
+    border-color: $primary-color;
+  }
+}
