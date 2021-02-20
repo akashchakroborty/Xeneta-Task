@@ -1,7 +1,7 @@
 @import '../../App/app.variables.scss';
 
 .dropdown {
-  width: 16em;
+  width: 13em;
   font-size: $primary-font-size;
   font-weight: bold;
   color: $primary-color;
@@ -10,5 +10,6 @@
   text-underline-offset: 0.5em;
   .ant-select-arrow {
     color: $primary-color;
+    padding-left: 1em;
   }
 }

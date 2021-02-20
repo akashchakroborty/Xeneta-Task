@@ -7,9 +7,11 @@ exports[`should test the OriginDestination Component should render the Component
   <Connect(DropdownComponent)
     defaultOption="Select Origin"
   />
-  <ForwardRef(SwapOutlined)
-    className="icon"
-  />
+  <div>
+    <ForwardRef(SwapOutlined)
+      className="icon"
+    />
+  </div>
   <Connect(DropdownComponent)
     defaultOption="Select Destination"
   />

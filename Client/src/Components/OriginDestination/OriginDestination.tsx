@@ -26,7 +26,9 @@ const OriginDestination: React.FC<OriginDestinationProps> = ({ getRates, origin,
   return (
     <div className="originDestination">
       <DropdownComponent defaultOption={SELECT_ORIGIN} />
-      <SwapOutlined className="icon" />
+      <div>
+        <SwapOutlined className="icon" />
+      </div>
       <DropdownComponent defaultOption={SELECT_DESTINATION} />
       <Button
         type="primary"
