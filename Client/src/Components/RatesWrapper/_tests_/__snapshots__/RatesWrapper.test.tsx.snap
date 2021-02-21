@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the OriginDestination Component should render the Component 1`] = `
+<div
+  className="ratesWrapper"
+>
+  <div
+    className="ratesContainer"
+  >
+    <RadioGroupComponent
+      data={
+        Map {
+          "Market Average" => "mean",
+          "Market Low" => "low",
+          "Market High" => "high",
+        }
+      }
+      onChange={[Function]}
+      selectedValue="mean"
+    />
+    <ChartComponent
+      data={
+        Array [
+          Object {
+            "day": "2021-01-01",
+            "high": 2436,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-02",
+            "high": 2436,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-03",
+            "high": 2436,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-04",
+            "high": 2435,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-05",
+            "high": 2427,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-06",
+            "high": 2431,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-07",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-08",
+            "high": 2438,
+            "low": 1036,
+            "mean": 1619,
+          },
+          Object {
+            "day": "2021-01-09",
+            "high": 2438,
+            "low": 1036,
+            "mean": 1619,
+          },
+          Object {
+            "day": "2021-01-10",
+            "high": 2438,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-11",
+            "high": 2436,
+            "low": 1037,
+            "mean": 1615,
+          },
+          Object {
+            "day": "2021-01-12",
+            "high": 2436,
+            "low": 1036,
+            "mean": 1614,
+          },
+          Object {
+            "day": "2021-01-13",
+            "high": 2436,
+            "low": 1036,
+            "mean": 1614,
+          },
+          Object {
+            "day": "2021-01-14",
+            "high": 2436,
+            "low": 1036,
+            "mean": 1614,
+          },
+          Object {
+            "day": "2021-01-15",
+            "high": 2438,
+            "low": 1036,
+            "mean": 1614,
+          },
+          Object {
+            "day": "2021-01-16",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-17",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-18",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-19",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-20",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-21",
+            "high": 2436,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-22",
+            "high": 2434,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-23",
+            "high": 2434,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-24",
+            "high": 2434,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-25",
+            "high": 2435,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-26",
+            "high": 2436,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-27",
+            "high": 2437,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-28",
+            "high": 2438,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-29",
+            "high": 2435,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-30",
+            "high": 2435,
+            "low": 1037,
+            "mean": 1611,
+          },
+          Object {
+            "day": "2021-01-31",
+            "high": 2435,
+            "low": 1037,
+            "mean": 1611,
+          },
+        ]
+      }
+      dataKeyX="day"
+      dataKeyY="mean"
+      height={400}
+      width={1300}
+    />
+  </div>
+</div>
+`;

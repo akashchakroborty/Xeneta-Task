@@ -1,5 +1,5 @@
 import { ThunkAction, ThunkDispatch } from 'redux-thunk';
-import { DEFAULT_PORTS, DEFAULT_RATES, ERROR_MESSAGE } from '../../Constants/constants';
+import { DEFAULT_PORTS, DEFAULT_RATES } from '../../Constants/constants';
 import { HttpMethods, RestClient, StatusCode } from '../../utility/restClient';
 import { getPortsUrl, getRatesUrl } from '../../Utility/url-utils/urlBuilder';
 import { AppState } from '../store';
@@ -110,7 +110,6 @@ export const getRates = (
     dispatch({
       type: SET_RATES_FAILURE,
     });
-    throw new Error(ERROR_MESSAGE);
   }
 };
 

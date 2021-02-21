@@ -54,6 +54,10 @@ export interface UpdateRateType {
   payload: string;
 }
 
+export interface PortBasedRatesInvalid {
+  type: null;
+}
+
 export type PortBasedRatesActionTypes =
   | SetPortsSuccess
   | SetPortsFailure
@@ -63,4 +67,5 @@ export type PortBasedRatesActionTypes =
   | SetRatesSuccess
   | SetRatesFailure
   | GetRatesLoading
-  | UpdateRateType;
+  | UpdateRateType
+  | PortBasedRatesInvalid;

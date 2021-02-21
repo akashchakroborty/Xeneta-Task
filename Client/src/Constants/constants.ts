@@ -1,7 +1,6 @@
 export const SELECT_ORIGIN = 'Select Origin';
 export const SELECT_DESTINATION = 'Select Destination';
 export const GET_RATES = 'Get Rates';
-export const ERROR_MESSAGE = 'Something went wrong. Please try again.';
 export const NO_DATA_MESSAGE = 'Sorry, no data available for the selected ports.';
 export const RATE_TYPE_MAPPER = new Map([
   ['Market Average', 'mean'],

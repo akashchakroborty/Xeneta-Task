@@ -28,7 +28,7 @@ const RatesWrapper: React.FC<RatesWrapperProps> = ({
   return (
     <div className="ratesWrapper">
       {isRatesLoading ? (
-        <Spin size="large" />
+        <Spin className="spinner" size="large" />
       ) : (
         <>
           {rates.length > 0 ? (
@@ -47,7 +47,11 @@ const RatesWrapper: React.FC<RatesWrapperProps> = ({
               />
             </div>
           ) : (
-            <>{isGetRateClicked && <Alert message={NO_DATA_MESSAGE} type="warning" showIcon />}</>
+            <>
+              {isGetRateClicked && (
+                <Alert className="alert" message={NO_DATA_MESSAGE} type="warning" showIcon />
+              )}
+            </>
           )}
         </>
       )}
