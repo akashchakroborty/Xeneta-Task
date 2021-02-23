@@ -4,11 +4,6 @@ exports[`should test the RangePicker Component should render the Component 1`] =
 <RangePicker
   format="YYYY-MM-DD"
   onChange={[MockFunction]}
-  value={
-    Array [
-      null,
-      null,
-    ]
-  }
+  value={null}
 />
 `;
