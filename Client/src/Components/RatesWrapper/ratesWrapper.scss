@@ -9,6 +9,12 @@
   .ratesContainer > div {
     margin: 2.5em 0;
   }
+  .ratesContainer {
+    .filterContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   .ant-alert-message {
     color: $primary-color;
   }

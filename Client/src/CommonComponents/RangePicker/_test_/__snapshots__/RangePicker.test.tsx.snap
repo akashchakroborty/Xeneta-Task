@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test the RangePicker Component should render the Component 1`] = `
+<RangePicker
+  format="YYYY-MM-DD"
+  onChange={[MockFunction]}
+  value={
+    Array [
+      null,
+      null,
+    ]
+  }
+/>
+`;

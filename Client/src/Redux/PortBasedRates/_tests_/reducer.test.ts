@@ -10,6 +10,7 @@ import {
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
   UPDATE_RATE_TYPE,
+  UPDATE_START_END_DATES,
 } from '../constants';
 import portBasedRatesReducer, { defaultState } from '../reducer';
 
@@ -97,5 +98,14 @@ describe('portBasedRatesReducer', () => {
         payload: 'Mock Rate Type',
       }).selectedRateType,
     ).toStrictEqual('Mock Rate Type');
+  });
+
+  it('should update start and end dates when update startEndDate type is fired', () => {
+    expect(
+      portBasedRatesReducer(defaultState, {
+        type: UPDATE_START_END_DATES,
+        payload: { startDate: '2021-01-29', endDate: '2021-01-29' },
+      }).startDate,
+    ).toStrictEqual('2021-01-29');
   });
 });

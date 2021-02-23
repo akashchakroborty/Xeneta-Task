@@ -7,17 +7,27 @@ exports[`should test the OriginDestination Component should render the Component
   <div
     className="ratesContainer"
   >
-    <RadioGroupComponent
-      data={
-        Map {
-          "Market Average" => "mean",
-          "Market Low" => "low",
-          "Market High" => "high",
+    <div
+      className="filterContainer"
+    >
+      <RangePickerComponent
+        dateFormat="YYYY-MM-DD"
+        endDate=""
+        onChange={[Function]}
+        startDate=""
+      />
+      <RadioGroupComponent
+        data={
+          Map {
+            "Market Average" => "mean",
+            "Market Low" => "low",
+            "Market High" => "high",
+          }
         }
-      }
-      onChange={[Function]}
-      selectedValue="mean"
-    />
+        onChange={[Function]}
+        selectedValue="mean"
+      />
+    </div>
     <ChartComponent
       data={
         Array [
@@ -212,7 +222,7 @@ exports[`should test the OriginDestination Component should render the Component
       dataKeyX="day"
       dataKeyY="mean"
       height={400}
-      width={1300}
+      width={1550}
     />
   </div>
 </div>

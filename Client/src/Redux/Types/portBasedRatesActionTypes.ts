@@ -8,8 +8,9 @@ import {
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
   UPDATE_RATE_TYPE,
+  UPDATE_START_END_DATES,
 } from '../PortBasedRates/constants';
-import { Ports, Rates } from './portBasedRatesTypes';
+import { Ports, Rates, StartEndDates } from './portBasedRatesTypes';
 
 export interface SetPortsSuccess {
   type: typeof SET_PORTS_SUCCESS;
@@ -58,6 +59,11 @@ export interface PortBasedRatesInvalid {
   type: null;
 }
 
+export interface UpdateStartEndDates {
+  type: typeof UPDATE_START_END_DATES;
+  payload: StartEndDates;
+}
+
 export type PortBasedRatesActionTypes =
   | SetPortsSuccess
   | SetPortsFailure
@@ -68,4 +74,5 @@ export type PortBasedRatesActionTypes =
   | SetRatesFailure
   | GetRatesLoading
   | UpdateRateType
-  | PortBasedRatesInvalid;
+  | PortBasedRatesInvalid
+  | UpdateStartEndDates;

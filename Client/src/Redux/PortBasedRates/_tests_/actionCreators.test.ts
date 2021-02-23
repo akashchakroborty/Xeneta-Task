@@ -12,6 +12,7 @@ import {
   updateDestination,
   updateOrigin,
   updateRateType,
+  updateStartEndDates,
 } from '../actionCreators';
 import {
   GET_PORTS_LOADING,
@@ -23,6 +24,7 @@ import {
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
   UPDATE_RATE_TYPE,
+  UPDATE_START_END_DATES,
 } from '../constants';
 
 const middlewares = [thunk];
@@ -55,6 +57,16 @@ describe('Port Based Rates Action', () => {
       payload: 'Mock Rate Type',
     };
     expect(updateRateType('Mock Rate Type')).toEqual(expectedAction);
+  });
+
+  it('should create an action to update start and end dates', () => {
+    const expectedAction = {
+      type: UPDATE_START_END_DATES,
+      payload: { startDate: '2021-01-29', endDate: '2021-01-29' },
+    };
+    expect(updateStartEndDates({ startDate: '2021-01-29', endDate: '2021-01-29' })).toEqual(
+      expectedAction,
+    );
   });
 
   describe('Test getPorts action creator', () => {

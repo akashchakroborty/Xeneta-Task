@@ -19,3 +19,9 @@ export const selectRateType = (state: AppState): string => state.portBasedRates.
 
 export const selectIsGetRateClicked = (state: AppState): boolean =>
   state.portBasedRates.isGetRateClicked;
+
+export const selectStartDate = (state: AppState): string => state.portBasedRates.startDate;
+
+export const selectEndDate = (state: AppState): string => state.portBasedRates.endDate;
+
+export const selectFilteredRates = (state: AppState): Rates[] => state.portBasedRates.filteredRates;

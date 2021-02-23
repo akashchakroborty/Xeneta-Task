@@ -1,6 +1,8 @@
 import { defaultState as portBasedRatesState } from '../reducer';
 import {
   selectDestination,
+  selectEndDate,
+  selectFilteredRates,
   selectIsGetRateClicked,
   selectIsPortsLoading,
   selectIsRatesLoading,
@@ -8,6 +10,7 @@ import {
   selectPorts,
   selectRates,
   selectRateType,
+  selectStartDate,
 } from '../selector';
 import { AppState } from '../../store';
 
@@ -31,5 +34,11 @@ describe('Port Based Rates Selector', () => {
     expect(selectRateType(mockState)).toEqual(mockState.portBasedRates.selectedRateType);
 
     expect(selectIsGetRateClicked(mockState)).toEqual(mockState.portBasedRates.isGetRateClicked);
+
+    expect(selectStartDate(mockState)).toEqual(mockState.portBasedRates.startDate);
+
+    expect(selectEndDate(mockState)).toEqual(mockState.portBasedRates.endDate);
+
+    expect(selectFilteredRates(mockState)).toEqual(mockState.portBasedRates.filteredRates);
   });
 });

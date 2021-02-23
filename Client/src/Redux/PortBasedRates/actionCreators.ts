@@ -8,8 +8,9 @@ import {
   UpdateDestination,
   UpdateOrigin,
   UpdateRateType,
+  UpdateStartEndDates,
 } from '../Types/portBasedRatesActionTypes';
-import { RatesParam } from '../Types/portBasedRatesTypes';
+import { RatesParam, StartEndDates } from '../Types/portBasedRatesTypes';
 import {
   GET_PORTS_LOADING,
   GET_RATES_LOADING,
@@ -20,6 +21,7 @@ import {
   UPDATE_DESTINATION,
   UPDATE_ORIGIN,
   UPDATE_RATE_TYPE,
+  UPDATE_START_END_DATES,
 } from './constants';
 
 export const getPorts = (): ThunkAction<
@@ -117,5 +119,12 @@ export const updateRateType = (selectedRateType: string): UpdateRateType => {
   return {
     type: UPDATE_RATE_TYPE,
     payload: selectedRateType,
+  };
+};
+
+export const updateStartEndDates = ({ startDate, endDate }: StartEndDates): UpdateStartEndDates => {
+  return {
+    type: UPDATE_START_END_DATES,
+    payload: { startDate, endDate },
   };
 };
