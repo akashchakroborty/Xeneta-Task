@@ -1,6 +1,6 @@
 ### Prerequisites
 
-**You’ll need to have .env file in the root of Client folder to use this application.
+You’ll need to have .env file in the root of Client folder to use this application.
 
 In .env file include API_KEY = sharedKey
   
